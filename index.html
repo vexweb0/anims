@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Button colors */
+        .button:nth-child(odd) { background-color: #3498db; }
+        .button:nth-child(even) { background-color: #2ecc71; }
+
+        /* Button hover animations */
+        .button:nth-child(1):hover { background-color: #2980b9; transform: scale(1.1); }
+        .button:nth-child(2):hover { background-color: #27ae60; transform: rotate(360deg); }
+        .button:nth-child(3):hover { background-color: #c0392b; transform: translateY(-10px); }
+        .button:nth-child(4):hover { background-color: #d35400; transform: scale(0.9); }
+        .button:nth-child(5):hover { background-color: #8e44ad; transform: rotate(-360deg); }
+        .button:nth-child(6):hover { background-color: #2ecc71; transform: translateY(10px); }
+        .button:nth-child(7):hover { background-color: #e74c3c; transform: rotate(180deg); }
+        .button:nth-child(8):hover { background-color: #f39c12; transform: scaleX(1.2); }
+        .button:nth-child(9):hover { background-color: #9b59b6; transform: scaleY(1.2); }
+        .button:nth-child(10):hover { background-color: #27ae60; transform: skew(20deg); }
+        .button:nth-child(11):hover { background-color: #3498db; transform: rotate(90deg); }
+        .button:nth-child(12):hover { background-color: #2ecc71; transform: translateY(-20px); }
+        .button:nth-child(13):hover { background-color: #c0392b; transform: scaleX(0.8); }
+        .button:nth-child(14):hover { background-color: #d35400; transform: scaleY(0.8); }
+        .button:nth-child(15):hover { background-color: #8e44ad; transform: rotate(180deg); }
+        .button:nth-child(16):hover { background-color: #2ecc71; transform: translateX(20px); }
+        .button:nth-child(17):hover { background-color: #e74c3c; transform: skew(30deg); }
+        .button:nth-child(18):hover { background-color: #f39c12; transform: skew(-30deg); }
+        .button:nth-child(19):hover { background-color: #9b59b6; transform: rotate(-90deg); }
+        .button:nth-child(20):hover { background-color: #27ae60; transform: translateY(20px); }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <!-- Repeat the pattern as needed -->
+        <button class="button">Scale</button>
+        <button class="button">Rotate</button>
+        <button class="button">Slide Up</button>
+        <button class="button">Scale Down</button>
+        <button class="button">Rotate Back</button>
+        <button class="button">Slide Down</button>
+        <button class="button">Rotate 180</button>
+        <button class="button">Scale X</button>
+        <button class="button">Scale Y</button>
+        <button class="button">Skew</button>
+        <button class="button">Rotate 90</button>
+        <button class="button">Slide Up 2x</button>
+        <button class="button">Scale X Down</button>
+        <button class="button">Scale Y Down</button>
+        <button class="button">Rotate 180 Back</button>
+        <button class="button">Slide Right</button>
+        <button class="button">Skew Right</button>
+        <button class="button">Skew Left</button>
+        <button class="button">Rotate -90</button>
+        <button class="button">Slide Down 2x</button>
+    </div>
+
+</body>
+</html>
